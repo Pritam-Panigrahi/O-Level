@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+position: fixed;
+top: 0;
+width: 100%;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover {
+background-color: darkred;
+}
+li ul { display:none; width: 100px; top: 35px;
+}
+li:hover ul { display:block; float:none;}
+div { margin:50px }
+</style>
+</head>
+ <body>
+<ul>
+<li><a class="active" href="#home">Home</a></li>
+<li><a href="#contact">Courses</a>
+<ul>
+    <li><a href="#">0 LEVEL</a></li>
+    <li><a href="#">A LEVEL</a></li>
+    <li><a href="#">B LEVEL</a></li>
+    <li><a href="#">C LEVEL</a></li>
+</ul>
+</li>
+<li><a href="#about">About</a></li>
+<li><a href="#">Help</a></li>
+</ul>
+ </body>
+</html

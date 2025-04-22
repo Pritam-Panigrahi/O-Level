@@ -1,0 +1,20 @@
+
+<html>
+<head>
+    <title>Java Script Events</title>
+    <script>
+        function over(){
+            document.getElementById('demo').innerHTML='Text Changed For MouseOver';
+        }
+        function out(){
+            document.getElementById('demo').innerHTML='Text Changed For MouseOut';
+        }
+    </script>
+</head>
+<body>
+    <h3 >Java Script Events</h3>
+    <button onmouseover="over()">Click Me</button>
+    <button onmouseout="out()">Click Me</button>
+    <h4 id="demo" >See Status Here</h4>
+</body>
+</html>

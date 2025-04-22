@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form</title>
+</head>
+<body bgcolor="pink" leftmargin="50">
+    <h1>Login or SignUp</h1>
+    <form action="file:///C:/Users/Lenovo/OneDrive/Desktop/HTML/action.html" method="post" target="_blank">
+        <fieldset>
+        <legend><h2>Login</h2></legend>
+        
+        User Name : <input type="text" name="un" placeholder="Enter User Name"> <br> <br>
+        Password  : <input type="password" name="ps" placeholder="Enter password"> <br> <br>
+        <input type="submit" name="s"> <br> <br>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Create an Account</h2></legend>
+        Name : <input type="text" name="name" maxlength="6" minlength="3" placeholder="Enter Your Name"> <br> <br>
+        eMail: <input type="email" name="em" placeholder="Enter Your email ID"> <br> <br>
+        Gender:<input type="radio" name="g"> Male
+               <input type="radio" name="g"> Feamle <br> <br>
+        DOB :  <input type="date" name="DOB" > <br> <br>
+        Qualification : <input type="checkbox"> 10th
+                        <input type="checkbox"> 12th
+                        <input type="checkbox"> UG
+                        <input type="checkbox"> PG <br> <br>
+        Upload Your Photo : <input type="file"> <br> <br>
+        Adress : <br><textarea rows="6" cols="20" placeholder="Enter Adress Here"></textarea> <br>
+        Select your State : <select>
+                                <option>UP</option>
+                                <option>UK</option>
+                                <option>MP</option>
+                                <option>Bihar</option>
+                                <option>Odisha</option>
+                            </select>  <br> <br>
+                            <input type="reset" name="r">
+                            <input type="submit" name="smt">  <br> <br>
+                            <input type="button" value="Click Here" onclick="alert('Hello Students')">
+                            <input type="image" src="Pritam.jpg" alt="submit" height="30" width="30">
+                        </fieldset>
+    </form>
+</body>
+</html>

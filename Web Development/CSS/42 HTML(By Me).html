@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>This Is HTML Menu Design</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0px;
+            top: 0px;
+            background-color: aqua;
+            width: 100%;
+            position: fixed;
+        }
+        li a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+        a:hover {background-color: yellow;
+            color:blueviolet;}
+        li {border-right: 1px solid red;}
+        li:last-child {border-bottom: none;}
+        .active {background-color: green;
+        color: white;}
+
+        li {float: left;}
+
+        li ul {display: none; width: 73px;}
+        li:hover ul {display: block;}
+              
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li>
+            <a href="#Options">Options</a>
+            <ul>
+                <li><a href="#OLevel">OLevel</a></li>
+                <li><a href="#ALevel">ALevel</a></li>
+                <li><a href="#BLevel">CLevel</a></li>
+                <li><a href="#DLevel">DLevel</a></li>
+            </ul>
+        </li>
+        <li><a href="#About">About</a></li>    
+        <li><a href="Help">Help</a></li>
+    </ul>
+</body>
+</html>

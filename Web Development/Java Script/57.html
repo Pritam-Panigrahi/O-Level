@@ -1,0 +1,37 @@
+
+<html>
+<head>
+    <title>Form Validation</title>
+    <script>
+        function data(){
+            let a = document.getElementById('u').value;
+            let b = document.getElementById('num').value;
+            let c = document.getElementById('p').value;
+            let d = document.getElementById('pr').value;
+            if(a==""||b==""||c==""||d==""){
+                alert("All Fields Are Mandertory");
+            }
+            else if( b.length<10||b.lenhth>10){
+                alert("Number is not Valid");
+            }
+            else if(isNaN(b)){
+                alert("Not A Number");
+            }
+            else if(c!=d){
+                alert("Password Must be same")
+            }
+        }
+        
+    </script>
+</head>
+<body bgcolor="pink">
+    <form action=""><h3>Form Validation</h3>
+        <h4>User id : <input id="u" required></h4 >
+        <h4>Mobile Number : <input id="num" required></h4>
+        <h4>Password : <input type="password" id="p" required></h4>
+        <h4>Re-Password : <input type="password" id="pr" required ></h4>
+        <button onclick="data()">Click Here</button>
+    </form>
+    
+</body>
+</html>

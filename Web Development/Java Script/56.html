@@ -1,0 +1,23 @@
+
+<html>
+<head>
+    <title>Form Validation</title>
+    <script>
+        function data(){
+            let x = document.getElementById('num').value;
+            if(isNaN(x)||x<1||x>10){   // If X isa Number between (0-9)
+                alert("Number Only");
+            }
+            else{
+                alert("Yes This Is Number");
+            }
+        }
+        
+    </script>
+</head>
+<body bgcolor="pink">
+    <h3>Form Validation</h3>
+    <h4>Input Number : <input id="num"></h4>
+    <button onclick="data()">Click Here</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+<html>
+<head>
+    <title>Form Validation</title>
+    <script>
+        function data(){
+            let a = document.forms["myForm"]["u"].value;
+            let b = document.forms["myForm"]["p"].value;
+            if (a==""||b=="") {
+                alert("All Field are Mendatory");
+            }
+        }
+    </script>
+</head>
+<body bgcolor="pink">
+    <h3>Form Validation</h3>
+    <form onsubmit="data()" name="myForm">
+        User Name : <input type="text" id="u"> <br> <br>
+        Password :   <input type="password" id="p">  <br> <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
